@@ -55,7 +55,7 @@ code/
 ## References
 - **DEAP Library**: https://deap.readthedocs.io/
 - **Control Systems Library**: https://python-control.readthedocs.io/
-- **Robin T. Bye, "Optimising a PID Controller Using a Genetic Algorithm," 2012 (Used as inspiration for methodology and cost function selection).
+- Robin T. Bye, "Optimising a PID Controller Using a Genetic Algorithm," 2012 (Used as inspiration for methodology and cost function selection).
 
 ## License
 This project is for educational purposes. Modify and use it freely!
