@@ -22,41 +22,43 @@ Ensure you have **Python 3** installed, then install dependencies:
 ```bash
 pip install numpy matplotlib deap control
 
+## Installation
+Ensure you have Python 3 installed, then install dependencies:
+```bash
+pip install numpy matplotlib deap control
+```
 ## Running the Code
 Run the script with:
-@@ -52,8 +54,10 @@ code/
-
-Parameters
-
-You can change the cost function in ga_pid.py:
-
+```bash
+python ga_pid.py
+```
+## Parameters
+You can change the cost function in `ga_pid.py`:
+```python
 cost_function_choice = 1  # Set to 1-6 (1=ITAE, 2=ISE, etc.)
-
-Genetic Algorithm Configuration
-
-    Population Size: 50
-    Mutation Rate: 0.2
-    Crossover Probability: 0.7
-    Number of Generations: 30
-
-Expected Output
-
-    The best PID parameters found.
-    Final step response for GA-optimized PID.
-    Comparison of step responses (GA vs. Ziegler-Nichols vs. Manual tuning).
-
-File Structure
-
+```
+## Genetic Algorithm Configuration
+- **Population Size**: 50
+- **Mutation Rate**: 0.2
+- **Crossover Probability**: 0.7
+- **Number of Generations**: 30
+## Expected Output
+- The best **PID parameters** found.
+- **Final step response** for GA-optimized PID.
+- **Comparison of step responses** (GA vs. Ziegler-Nichols vs. Manual tuning).
+## File Structure
+```
 code/
 │── ga_pid.py   # Main Python script
 │── README.md   # This file
+```
 
-References
+##References
 
     DEAP Library: https://deap.readthedocs.io/
     Python Control Systems Library: https://python-control.readthedocs.io/
     Robin T. Bye, "Optimising a PID Controller Using a Genetic Algorithm," 2012 (Used as inspiration for methodology and cost function selection).
 
-License
+##License
 
 This project is for educational purposes. Modify and use it freely!
