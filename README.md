@@ -1,10 +1,10 @@
 # PID Controller Optimization
 
 ## Overview
-This project uses a genetic algorithm(GA) to optimize the parameters (Kp, Ki, Kd) of a PID controller for a third-order system. The GA optimizes the PID gains to minimize one of several cost functions related to system performance.
+This project uses a Genetic Algorithm (GA) to optimize the parameters (Kp, Ki, Kd) of a PID controller for a third-order system. The GA optimizes the PID gains to minimize one of several cost functions related to system performance.
 
 ## Features
-- Implements a **real-valued GA** using the DEAP library.
+- Implements a **real-valued GA** using the **DEAP** library.
 - Optimizes **PID parameters** based on different cost functions:
   - **ITAE** (Integral of Time-weighted Absolute Error)
   - **ISE** (Integral of Squared Error)
@@ -12,14 +12,16 @@ This project uses a genetic algorithm(GA) to optimize the parameters (Kp, Ki, Kd
   - **SSE** (Steady-State Error)
   - **Overshoot**
   - **Settling Time**
-- Compares GA-tuned PID with **Ziegler-Nichols** and **manual tuning**.
-- Plots step response comparisons.
+- Compares GA-tuned PID with:
+  - **Ziegler-Nichols tuning**
+  - **Manual tuning**
+- Plots **step response comparisons**.
 
 ## Installation
-Ensure you have Python 3 installed, then install dependencies:
+Ensure you have **Python 3** installed, then install dependencies:
 ```bash
 pip install numpy matplotlib deap control
-```
+
 
 ## Running the Code
 Run the script with:
@@ -52,8 +54,10 @@ code/
 ```
 
 ## References
-- **DEAP Library**: https://deap.readthedocs.io/
-- **Control Systems Library**: https://python-control.readthedocs.io/
+- **DEAP Library**: [https://deap.readthedocs.io/](https://deap.readthedocs.io/)
+- **Python Control Systems Library**: [https://python-control.readthedocs.io/](https://python-control.readthedocs.io/)
+- **Robin T. Bye, "Optimising a PID Controller Using a Genetic Algorithm," 2012** (Used as inspiration for methodology and cost function selection).
+
 
 ## License
 This project is for educational purposes. Modify and use it freely!
